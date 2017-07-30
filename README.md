@@ -1,29 +1,29 @@
 ### Setup
-* Fork, Clone, yarn install, yarn start
-* Use your checklist of how to make react components, use state and use events.
+* xFork, Clone, yarn install, yarn start
+* xUse your checklist of how to make react components, use state and use events.
 
 ### Create components
-* In App.js, do a find for comments that look like `{/*   <TopNav>   */}  {/*   </TopNav>   */}`
-* Search for the name of the component you are attempting to make
-* This will indicate where the component should start and end
-* Cut out the code between the comments and put in its own file
-* Create .js files for each component. Make sure to name it the same as the component.
+* xIn App.js, do a find for comments that look like `{/*   <TopNav>   */}  {/*   </TopNav>   */}`
+* xSearch for the name of the component you are attempting to make
+* xThis will indicate where the component should start and end
+* xCut out the code between the comments and put in its own file
+* xCreate .js files for each component. Make sure to name it the same as the component.
 
 ### Components
-* TopNav (already made)
-* SideNav
-* Comments
-* Tasks
-* Orders
-* Tickets
-* AreaChart
-* DonutChart
-* TasksPanel
-* TransactionsPanel
-* MessagePreview (which is in TopNav)
-* DateTime (which is in MessagePreview)
-* TaskItem (which is in TaskPanel)
-* TransactionRow (which is in TransactionsPanel)
+* xTopNav (already made)
+* xSideNav
+* xComments
+* xTasks
+* xOrders
+* xTickets
+* xAreaChart
+* xDonutChart
+* xTasksPanel
+* xTransactionsPanel
+* xMessagePreview (which is in TopNav)
+* xDateTime (which is in MessagePreview)
+* xTaskItem (which is in TaskPanel)
+* xTransactionRow (which is in TransactionsPanel)
 
 ### Import and use components where appropriate
 * This is SOP from checklist.
@@ -63,5 +63,3 @@
 * TasksPanel - map the array of "tasks" into array of TaskItem's. Pass one task into TaskItem
 * TopNav - map the array of "messages" into array of MessagePreview's. Pass one message into MessagePreview
 * TransactionPanel - map the array of "orders" into array of TransactionRow's. Pass one order into TransactionRow
-
-

@@ -5,26 +5,26 @@ import "./index.css";
 import state from "./state";
 
 const {
-dateTime,
-newComments,
-newTasks,
-newOrders,
-tickets,
-orders,
-taskItem,
-tasks,
-messages,
+  dateTime,
+  newComments,
+  newTasks,
+  newOrders,
+  tickets,
+  orders,
+  taskItem,
+  tasks,
+  messages,
 } = state;
 
 ReactDOM.render(
-  <App 
+  <App
     taskItem={taskItem}
     dateTime={dateTime}
     newComments={newComments}
     newTasks={newTasks}
     newOrders={newOrders}
     tickets={tickets}
-    orders={orders} 
+    orders={orders}
     tasks={tasks}
     messages={messages}
     />,
