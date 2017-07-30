@@ -13,16 +13,14 @@ import TransactionsPanel from "./components/TransactionsPanel";
 import PropTypes from "prop-types";
 
 function App(props) {
-
   return (
     <div>
       <div id="wrapper">
         <nav className="navbar navbar-inverse navbar-fixed-top" role="navigation">
 
-          <TopNav />
-
+          <TopNav messages={props.messages} />
           <SideNav />
-          
+
         </nav>
 
         <div id="page-wrapper">
@@ -44,13 +42,10 @@ function App(props) {
 
             <div className="row">
 
-               <Comments />
-
-                <Tasks />
-
-                <Orders />
-
-                <Tickets />
+              <Comments newComments={props.newComments} />
+              <Tasks newTasks={props.newTasks} />
+              <Orders newOrders={props.newOrders} />
+              <Tickets tickets={props.tickets} />
 
             </div>
 
@@ -61,11 +56,11 @@ function App(props) {
                 <DonutChart />
 
                 <div className="col-lg-4">
-                    <TaskPanel />
+                    <TaskPanel tasks={props.tasks} />
                 </div>
 
                 <div className="col-lg-4">
-                    <TransactionsPanel />
+                    <TransactionsPanel orders={props.orders} />
                 </div>
 
             </div>
@@ -78,7 +73,15 @@ function App(props) {
 }
 
 App.propTypes = {
-
+  taskItem: React.PropTypes.string.isRequired,
+  dateTime: React.PropTypes.string.isRequired,
+  newComments: React.PropTypes.string.isRequired,
+  newTasks: React.PropTypes.string.isRequired,
+  newOrders: React.PropTypes.string.isRequired,
+  tickets: React.PropTypes.string.isRequired,
+  orders: React.PropTypes.string.isRequired,
+  tasks: React.PropTypes.string.isRequired,
+  messages: React.PropTypes.string.isRequired
 };
 
 export default App;
