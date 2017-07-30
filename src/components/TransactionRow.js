@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
 function TransactionRow() {
   return(
@@ -9,6 +10,10 @@ function TransactionRow() {
         <td>$321.33</td>
     </tr>
   )
+}
+
+TransactionRow.PropTypes = {
+  order: React.PropTypes.object.isRequired,
 }
 
 export default TransactionRow;

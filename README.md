@@ -47,12 +47,12 @@
 * xPass the tasks prop from App to TaskPanel
 
 ### Prop Types
-* TransactionRow should require one prop called "order" that is an object
-* TaskItem should require one prop called "task" that is an object
-* MessagePreview should require one prop called "message" that is an object
-* TopNav should require one prop called "messages" that is an array
-* TransactionPanel should require one prop called "orders" that is an array
-* TasksPanel should require one prop called "tasks" that is an array
+* xTransactionRow should require one prop called "order" that is an object
+* xTaskItem should require one prop called "task" that is an object
+* xMessagePreview should require one prop called "message" that is an object
+* xTopNav should require one prop called "messages" that is an array
+* xTransactionPanel should require one prop called "orders" that is an array
+* xTasksPanel should require one prop called "tasks" that is an array
 
 ### Use Props
 * TaskItem should use the task prop to populate the task name and the date

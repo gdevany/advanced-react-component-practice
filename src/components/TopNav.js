@@ -1,5 +1,7 @@
 import React from "react";
 import MessagePreview from './MessagePreview';
+import PropTypes from "prop-types";
+
 
 function TopNav() {
   return (
@@ -61,6 +63,10 @@ function TopNav() {
           </ul>
       </li>
     </ul>);
+}
+
+TopNav.PropTypes = {
+  messages: React.PropTypes.array.isRequired
 }
 
 export default TopNav;
