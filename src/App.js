@@ -73,15 +73,15 @@ function App(props) {
 }
 
 App.propTypes = {
-  taskItem: React.PropTypes.string.isRequired,
-  dateTime: React.PropTypes.string.isRequired,
-  newComments: React.PropTypes.string.isRequired,
-  newTasks: React.PropTypes.string.isRequired,
-  newOrders: React.PropTypes.string.isRequired,
-  tickets: React.PropTypes.string.isRequired,
-  orders: React.PropTypes.string.isRequired,
-  tasks: React.PropTypes.string.isRequired,
-  messages: React.PropTypes.string.isRequired
+  taskItem: PropTypes.string.isRequired,
+  dateTime: PropTypes.string.isRequired,
+  newComments: PropTypes.number.isRequired,
+  newTasks: PropTypes.number.isRequired,
+  newOrders: PropTypes.number.isRequired,
+  tickets: PropTypes.number.isRequired,
+  orders: PropTypes.array.isRequired,
+  tasks: PropTypes.array.isRequired,
+  messages: PropTypes.array.isRequired,
 };
 
 export default App;

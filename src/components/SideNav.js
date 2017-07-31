@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SideNav() {
+function SideNav(props) {
   return (
     <div className="collapse navbar-collapse navbar-ex1-collapse">
         <ul className="nav navbar-nav side-nav">

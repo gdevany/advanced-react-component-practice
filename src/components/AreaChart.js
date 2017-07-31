@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AreaChart() {
+function AreaChart(props) {
   return(
     <div className="row">
         <div className="col-lg-12">

@@ -3,7 +3,12 @@ import TransactionRow from './TransactionRow';
 import PropTypes from "prop-types";
 
 
-function TransactionsPanel() {
+function TransactionsPanel(props) {
+
+  const transactionRow = props.orders.map((order) => {
+    return order;
+  })
+
   return(
     <div className="panel panel-default">
         <div className="panel-heading">
@@ -22,7 +27,7 @@ function TransactionsPanel() {
                     </thead>
                     <tbody>
 
-                        <TransactionRow />
+                        <TransactionRow order={transactionRow}/>
 
                     </tbody>
                 </table>
@@ -36,7 +41,7 @@ function TransactionsPanel() {
 }
 
 TransactionsPanel.PropTypes = {
-  orders: React.PropTypes.array.isRequired
+  orders: PropTypes.array.isRequired
 }
 
 export default TransactionsPanel;

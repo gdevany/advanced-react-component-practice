@@ -3,7 +3,7 @@ import DateTime from './DateTime';
 import PropTypes from "prop-types";
 
 
-function MessagePreview() {
+function MessagePreview(props) {
   return(
     <li className="message-preview">
         <a href="#">
@@ -12,10 +12,10 @@ function MessagePreview() {
                     <img className="media-object" src="http://placehold.it/50x50" alt="" />
                 </span>
                 <div className="media-body">
-                    <h5 className="media-heading"><strong>John Smith</strong>
+                    <h5 className="media-heading"><strong>{props.message.name}</strong>
                     </h5>
-                      <DateTime />
-                    <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                      <DateTime date={props.message.date}/>
+                    <p>{props.message.message}</p>
                 </div>
             </div>
         </a>
@@ -24,7 +24,7 @@ function MessagePreview() {
 }
 
 MessagePreview.PropTypes = {
-  message: React.PropTypes.object.isRequired
+  message: PropTypes.object.isRequired
 }
 
 export default MessagePreview;

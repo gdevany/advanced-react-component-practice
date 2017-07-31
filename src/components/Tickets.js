@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Tickets() {
+function Tickets(props) {
   return(
     <div className="col-lg-3 col-md-6">
         <div className="panel panel-red">

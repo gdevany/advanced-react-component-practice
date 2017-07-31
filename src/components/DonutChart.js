@@ -1,6 +1,6 @@
 import React from 'react';
 
-function DonutChart() {
+function DonutChart(props) {
   return(
     <div className="col-lg-4">
         <div className="panel panel-default">

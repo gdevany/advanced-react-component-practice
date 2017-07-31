@@ -55,11 +55,11 @@
 * xTasksPanel should require one prop called "tasks" that is an array
 
 ### Use Props
-* TaskItem should use the task prop to populate the task name and the date
-* TransactionRow should use the order prop to populate the `<td>` s
-* MessagePreview should use the message prop to populate the name, date and message text
+* xTaskItem should use the task prop to populate the task name and the date
+* xTransactionRow should use the order prop to populate the `<td>` s
+* xMessagePreview should use the message prop to populate the name, date and message text
 
 ### Mapping
-* TasksPanel - map the array of "tasks" into array of TaskItem's. Pass one task into TaskItem
-* TopNav - map the array of "messages" into array of MessagePreview's. Pass one message into MessagePreview
-* TransactionPanel - map the array of "orders" into array of TransactionRow's. Pass one order into TransactionRow
+* xTasksPanel - map the array of "tasks" into array of TaskItem's. Pass one task into TaskItem
+* xTopNav - map the array of "messages" into array of MessagePreview's. Pass one message into MessagePreview
+* xTransactionPanel - map the array of "orders" into array of TransactionRow's. Pass one order into TransactionRow

@@ -3,14 +3,19 @@ import MessagePreview from './MessagePreview';
 import PropTypes from "prop-types";
 
 
-function TopNav() {
+function TopNav(props) {
+
+  const messagePreview = props.messages.map((message) => {
+    return message;
+  })
+
   return (
     <ul className="nav navbar-right top-nav">
       <li className="dropdown">
           <a href="#" className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-envelope"></i> <b className="caret"></b></a>
           <ul className="dropdown-menu message-dropdown">
 
-              <MessagePreview />
+              <MessagePreview message={messagePreview} />
 
               <li className="message-footer">
                   <a href="#">Read All New Messages</a>
@@ -66,7 +71,7 @@ function TopNav() {
 }
 
 TopNav.PropTypes = {
-  messages: React.PropTypes.array.isRequired
+  messages: PropTypes.array.isRequired
 }
 
 export default TopNav;
