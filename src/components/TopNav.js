@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 
 function TopNav(props) {
 
-  const messagePreview = props.messages.map((message) => {
-    return message;
+  const messagePreview = props.messages.map((m) => {
+    return <MessagePreview name={m.name} date={m.date} message={m.message} />;
   })
 
   return (
@@ -15,7 +15,7 @@ function TopNav(props) {
           <a href="#" className="dropdown-toggle" data-toggle="dropdown"><i className="fa fa-envelope"></i> <b className="caret"></b></a>
           <ul className="dropdown-menu message-dropdown">
 
-              <MessagePreview message={messagePreview} />
+              {messagePreview}
 
               <li className="message-footer">
                   <a href="#">Read All New Messages</a>

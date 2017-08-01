@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function TransactionsPanel(props) {
 
   const transactionRow = props.orders.map((order) => {
-    return order;
+    return <TransactionRow order={order} />;
   })
 
   return(
@@ -27,7 +27,7 @@ function TransactionsPanel(props) {
                     </thead>
                     <tbody>
 
-                        <TransactionRow order={transactionRow}/>
+                        {transactionRow}
 
                     </tbody>
                 </table>

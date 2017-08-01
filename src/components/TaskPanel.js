@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function TaskPanel(props) {
 
   const taskItem = props.tasks.map((task) => {
-    return task;
+    return <TaskItem task={task} />;
   })
 
 
@@ -18,7 +18,7 @@ function TaskPanel(props) {
         <div className="panel-body">
             <div className="list-group">
 
-                <TaskItem task={taskItem} />
+                {taskItem}
 
             </div>
             <div className="text-right">
