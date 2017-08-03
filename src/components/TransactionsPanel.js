@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function TransactionsPanel(props) {
 
   const transactionRow = props.orders.map((order) => {
-    return <TransactionRow order={order} />;
+    return <TransactionRow order={order} key={order.id} />;
   })
 
   return(

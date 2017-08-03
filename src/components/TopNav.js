@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function TopNav(props) {
 
   const messagePreview = props.messages.map((m) => {
-    return <MessagePreview name={m.name} date={m.date} message={m.message} />;
+    return <MessagePreview key={m.id} name={m.name} date={m.date} message={m.message} />;
   })
 
   return (

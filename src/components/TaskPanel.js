@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 function TaskPanel(props) {
 
   const taskItem = props.tasks.map((task) => {
-    return <TaskItem task={task} />;
+    return <TaskItem task={task} key={task.id}/>;
   })
 
 
